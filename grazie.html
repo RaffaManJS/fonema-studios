@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="index, follow" />
+    <meta
+      name="description"
+      content="Sito web di prova,esempio di sito per uno
+    studio di registrazione/sala prove. Costruito con html,css in fraimword
+    Tailwind e qualche accenno di Javascript"
+    />
+    <meta
+      name="keywords"
+      content="ringraziamento,form,inviato,chiusura,messaggio"
+    />
+    <meta name="author" content="Raffaele De Marco" />
+    <title>Grazie·Fonema Studios</title>
+    <link
+      rel="icon"
+      type="image/webp"
+      href="./assets/icons8-studio-di-registrazione-64.png"
+      alt="immagine icona microfono"
+    />
+    <link
+      rel="preload"
+      href="./assets/fonts/dm-sans-400.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="./assets/fonts/shrikhand-400.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link rel="stylesheet" href="./fonts.css" />
+    <link rel="stylesheet" href="./output.css" />
+  </head>
+
+  <body class="bg-sfondo text-testo font-corpo">
+    <svg width="0" height="0" class="absolute" aria-hidden="true">
+      <symbol id="vinile" viewBox="0 0 100 100">
+        <circle cx="50" cy="50" r="48" class="fill-testo" />
+        <circle
+          cx="50"
+          cy="50"
+          r="40"
+          fill="none"
+          class="stroke-sfondo/20"
+          stroke-width="1"
+        />
+        <circle
+          cx="50"
+          cy="50"
+          r="33"
+          fill="none"
+          class="stroke-sfondo/20"
+          stroke-width="1"
+        />
+        <circle
+          cx="50"
+          cy="50"
+          r="26"
+          fill="none"
+          class="stroke-sfondo/20"
+          stroke-width="1"
+        />
+        <path
+          d="M22 30 A34 34 0 0 1 42 16"
+          fill="none"
+          class="stroke-sfondo/40"
+          stroke-width="2"
+          stroke-linecap="round"
+        />
+        <circle cx="50" cy="50" r="16" class="fill-accento" />
+        <circle cx="50" cy="38" r="2" class="fill-sfondo/60" />
+        <circle cx="50" cy="50" r="2.5" class="fill-sfondo" />
+      </symbol>
+    </svg>
+
+    <header class="relative border-b border-testo/20">
+      <nav
+        class="flex flex-col items-center justify-center lg:flex-row lg:justify-between gap-4 px-6 py-4"
+      >
+        <a href="index.html" class="text-xl font-['Shrikhand'] font-bold"
+          >Fonema Studios</a
+        >
+        <ul class="flex gap-6">
+          <li>
+            <a
+              href="index.html"
+              aria-current="page"
+              class="hover:underline underline-offset-4 aria-[current=page]:underline aria-[current=page]:decoration-accento"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a
+              href="./servizi.html"
+              aria-current="page"
+              class="hover:underline underline-offset-4"
+              >Servizi</a
+            >
+          </li>
+          <li>
+            <a href="galleria.html" class="hover:underline underline-offset-4"
+              >Galleria</a
+            >
+          </li>
+          <li>
+            <a href="contatti.html" class="hover:underline underline-offset-4"
+              >Contatti</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section
+        class="relative overflow-hidden max-w-4xl mx-auto text-center px-6 py-24"
+      >
+        <svg
+          class="mx-auto mb-6 block h-24 w-24 animate-giro-lento aria-hidden='true'"
+        >
+          <use href="#vinile" />
+        </svg>
+        <!-- <svg
+          class="absolute left-1/2 top-1/2 h-72 w-72 sm:h-128 sm:w-lg -translate-x-1/2 -translate-y-1/2 opacity-[0.06] pointer-events-none"
+          aria-hidden="true"
+          aria-hidden="true"
+        > -->
+          <use href="#vinile" />
+        </svg>
+        <p class="text-sm uppercase tracking-[0.3em] text-accento">
+          Messaggio ricevuto 
+        </p>
+
+        <h1
+          class="mt-4 font-['Shrikhand'] font-bold uppercase tracking-wider text-2xl md:text-8xl"
+        >
+          Grazie!
+        </h1>
+
+        <a
+  href="./index.html"
+  class="inline-block rounded-2xl px-6 py-3.5  text-sm mt-8 font-semibold bg-accento text-sfondo shadow-md shadow-[#5D4037]/20 transition-all hover:bg-accento-hover focus:outline-none focus:ring-2 focus:ring-[#5D4037] focus:ring-offset-2 focus:ring-offset-[#FAF6F2] active:scale-[0.99]"
+>
+  Torna alla home
+</a>
+
+        <div class="mx-auto mt-8 h-px w-24 bg-accento"></div>
+
+        <p class="mt-8 text-lg text-testo-soft">
+         //I dati non verranno salvati,è puramente dimostrativo.
+        </p>
+      </section>
+    </main>
+  </body>
+</html>
