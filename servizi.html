@@ -1,0 +1,338 @@
+<!doctype html>
+<html lang="it" class="scroll-smooth motion-reduce:scroll-auto">
+    <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="index, follow">
+     <meta name="description" content="Sito web di prova,esempio di sito per uno
+    studio di registrazione/sala prove. Costruito con html,css in fraimword
+    Tailwind e qualche accenno di Javascript">
+    <meta
+      name="keywords"
+      content="HTML, CSS, JavaScript,studio,registrazione,recording,sala prove,mix,master,prove"
+    />
+    <meta name="author" content="Raffaele De Marco" />
+    <title>Servizi·Fonema Studios</title>
+    <link
+      rel="icon"
+      type="image/webp"
+      href="./assets/icons8-studio-di-registrazione-64.png" alt="immagine icona microfono"
+    />
+    <link rel="preload" href="./assets/fonts/dm-sans-400.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="./assets/fonts/shrikhand-400.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="stylesheet" href="./fonts.css" />
+<link rel="stylesheet" href="./output.css" />
+  </head>
+  <body class="bg-sfondo text-testo font-corpo">
+    <header class="relative border-b border-testo/20">
+      <nav class="flex flex-col items-center justify-center lg:flex-row lg:justify-between gap-4 px-6 py-4">
+        <a href="index.html" class="text-xl font-['Shrikhand'] font-bold"
+          >Fonema Studios</a
+        >
+        <ul class="flex gap-6">
+          <li>
+            <a href="index.html" class="hover:underline underline-offset-4"
+              >Home</a
+            >
+          </li>
+          <li>
+           <a href="./servizi.html" aria-current="page"
+   class="hover:underline underline-offset-4 aria-[current=page]:underline aria-[current=page]:decoration-accento">Servizi</a>
+          </li>
+          <li>
+            <a href="galleria.html" class="hover:underline underline-offset-4"
+              >Galleria</a
+            >
+          </li>
+          <li>
+            <a href="contatti.html" class="hover:underline underline-offset-4"
+              >Contatti</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+     <section class="mx-auto max-w-4xl px-6 py-20 text-center">
+  <p class="text-sm uppercase tracking-[0.3em] text-accento font-bold">Servizi</p>
+  <h1 class="mt-4 font-titoli text-4xl md:text-6xl">Dalla prima nota al master finale</h1>
+  <p class="mt-6 text-lg text-testo-soft font-medium">
+    Servizi che puoi scegliere separatamente o unire in un unico percorso.
+  </p>
+
+  <nav aria-label="Servizi" class="mt-10 flex flex-wrap justify-center gap-3">
+    <a href="#registrazione" class="rounded-full border border-testo/30 px-4 py-2 text-sm transition hover:bg-testo hover:text-sfondo">Registrazione</a>
+    <a href="#sala-prove" class="rounded-full border border-testo/30 px-4 py-2 text-sm transition hover:bg-testo hover:text-sfondo">Sala prove</a>
+    <a href="#mixing" class="rounded-full border border-testo/30 px-4 py-2 text-sm transition hover:bg-testo hover:text-sfondo">Mixing</a>
+    <a href="#mastering" class="rounded-full border border-testo/30 px-4 py-2 text-sm transition hover:bg-testo hover:text-sfondo">Mastering</a>
+    <a href="#produzione" class="rounded-full border border-testo/30 px-4 py-2 text-sm transition hover:bg-testo hover:text-sfondo">Produzione</a>
+    <a href="#pacchetto" class="rounded-full border border-testo/30 px-4 py-2 text-sm transition hover:bg-testo hover:text-sfondo">Pacchetto completo</a>
+  </nav>
+</section>
+
+<section id="registrazione" class="scroll-mt-8 border-t border-testo/20">
+  <div class="mx-auto grid max-w-6xl gap-8 px-6 py-16 md:grid-cols-3">
+    <div>
+      <span class="font-titoli text-2xl text-accento">01</span>
+      <h2 class="mt-2 font-titoli text-3xl">Registrazione voce</h2>
+      
+    </div>
+
+    <div class="md:col-span-2">
+      <p class="text-lg text-testo-soft">
+        Voce pulita, nitida e compatta, con una compressione calibrata sul genere che fai.
+      </p>
+      <ul class="mt-6 list-disc space-y-2 pl-5 marker:text-accento">
+        <li>Voce lead</li>
+        <li>Doppie voci</li>
+        <li>Cori</li>
+        <li>Voci sporche e grintose</li>
+      </ul>
+
+      <h3 class="mt-10 text-sm uppercase tracking-[0.3em] text-accento">I nostri microfoni</h3>
+      <div class="mt-4 grid gap-4 sm:grid-cols-2">
+
+        <figure class="rounded-lg border border-testo/20 bg-testo/5 p-4">
+          <img src="./assets/microfono-1-400.webp" alt="Microfono Neumann U87 Ai"
+               width="400" height="313" loading="lazy"
+               class="aspect-square w-full rounded object-contain">
+          <figcaption class="mt-3">
+            <p class="font-medium">Neumann U87 Ai</p>
+            <p class="text-sm text-testo-soft">Voce lead: nitida, definita, con presenza.</p>
+          </figcaption>
+        </figure>
+
+        <figure class="rounded-lg border border-testo/20 bg-testo/5 p-4">
+          <img src="./assets/microfono-2-400.webp" alt="Microfono a valvole Rode NTK"
+               width="400" height="313" loading="lazy"
+               class="aspect-square w-full rounded object-contain">
+          <figcaption class="mt-3">
+            <p class="font-medium">Rode NTK</p>
+            <p class="text-sm text-testo-soft">Voce piena e compatta, con il calore delle valvole.</p>
+          </figcaption>
+        </figure>
+
+        <figure class="rounded-lg border border-testo/20 bg-testo/5 p-4">
+          <img src="./assets/microfono-3-400.webp" alt="Microfono AKG C414 XLII"
+               width="400" height="313" loading="lazy"
+               class="aspect-square w-full rounded object-cover scale-105">
+          <figcaption class="mt-3">
+            <p class="font-medium">AKG C414 XLII</p>
+            <p class="text-sm text-testo-soft">Doppie voci e cori: versatile, direttività selezionabile.</p>
+          </figcaption>
+        </figure>
+
+        <figure class="rounded-lg border border-testo/20 bg-testo/5 p-4">
+          <img src="./assets/microfono-4-400.webp" alt="Microfono Shure SM7B"
+               width="400" height="313" loading="lazy"
+               class="aspect-square w-full rounded object-contain">
+          <figcaption class="mt-3">
+            <p class="font-medium">Shure SM7B</p>
+            <p class="text-sm text-testo-soft">Voci sporche e grintose: dinamico, regge volumi alti.</p>
+          </figcaption>
+        </figure>
+        </div>
+        </div>
+
+ <div class="mt-8 flex flex-wrap items-center gap-x-6 gap-y-4">
+  <p>
+    <span class="font-titoli text-3xl text-accento">30 €</span>
+    <span class="text-testo-soft">all'ora</span>
+  </p>
+  <a href="contatti.html" class="rounded border border-testo px-6 py-3 transition hover:bg-testo hover:text-sfondo">
+    Richiedi informazioni
+  </a>
+</div>
+</section>
+
+<section id="sala-prove" class="scroll-mt-8 border-t border-testo/20">
+  <div class="mx-auto grid max-w-6xl gap-8 px-6 py-16 md:grid-cols-3">
+    <div>
+      <span class="font-titoli text-2xl text-accento">02</span>
+      <h2 class="mt-2 font-titoli text-3xl">Sala prove</h2>
+       
+    </div>
+    <div class="md:col-span-2">
+      <p class="text-lg text-testo-soft">
+        Uno spazio attrezzato dove provare con la tua band, a ore o con un pacchetto mensile.
+      </p>
+      <ul class="mt-6 list-disc space-y-2 pl-5 marker:text-accento">
+        <li>Impianto voci, batteria e amplificatori inclusi</li>
+        <li>Prenotazione a ore o a pacchetto</li>
+        <li>Possibilità di registrare le prove</li>
+      </ul>
+      <div class="mt-8 flex flex-wrap items-center gap-x-6 gap-y-4">
+  <p>
+    <span class="font-titoli text-3xl text-accento">30 €</span>
+    <span class="text-testo-soft">all'ora</span>
+  </p>
+  <a href="contatti.html" class="rounded border border-testo px-6 py-3 transition hover:bg-testo hover:text-sfondo">
+    Richiedi informazioni
+  </a>
+</div>
+    </div>
+  </div>
+</section>
+
+<section id="mixing" class="scroll-mt-8 border-t border-testo/20">
+  <div class="mx-auto grid max-w-6xl gap-8 px-6 py-16 md:grid-cols-3">
+    <div>
+      <span class="font-titoli text-2xl text-accento">03</span>
+      <h2 class="mt-2 font-titoli text-3xl">Mixing</h2>
+    </div>
+    <div class="md:col-span-2">
+      <p class="text-lg text-testo-soft">
+        Bilanciamo le tracce una per una, finché ogni strumento trova il suo posto nel brano.
+      </p>
+      <ul class="mt-6 list-disc space-y-2 pl-5 marker:text-accento">
+        <li>Equilibrio di volumi, spazio e dinamica</li>
+        <li>Revisioni incluse fino al risultato desiderato</li>
+        <li>Consegna in alta qualità</li>
+      </ul>
+      <div class="mt-8 flex flex-wrap items-center gap-x-6 gap-y-4">
+  <p>
+    <span class="font-titoli text-3xl text-accento">30 €</span>
+    <span class="text-testo-soft">all'ora</span>
+  </p>
+  <a href="contatti.html" class="rounded border border-testo px-6 py-3 transition hover:bg-testo hover:text-sfondo">
+    Richiedi informazioni
+  </a>
+</div>
+    </div>
+  </div>
+</section>
+
+<section id="mastering" class="scroll-mt-8 border-t border-testo/20">
+  <div class="mx-auto grid max-w-6xl gap-8 px-6 py-16 md:grid-cols-3">
+    <div>
+      <span class="font-titoli text-2xl text-accento">04</span>
+      <h2 class="mt-2 font-titoli text-3xl">Mastering</h2>
+    </div>
+    <div class="md:col-span-2">
+      <p class="text-lg text-testo-soft">
+        L'ultima rifinitura, perché il brano suoni bene su ogni impianto e su ogni piattaforma.
+      </p>
+      <ul class="mt-6 list-disc space-y-2 pl-5 marker:text-accento">
+        <li>Ottimizzazione per streaming, CD e vinile</li>
+        <li>Uniformità di volume tra i brani di un album</li>
+        <li>File pronti per la distribuzione</li>
+      </ul>
+    <div class="mt-8 flex flex-wrap items-center gap-x-6 gap-y-4">
+  <p>
+    <span class="font-titoli text-3xl text-accento">30 €</span>
+    <span class="text-testo-soft">all'ora</span>
+  </p>
+  <a href="contatti.html" class="rounded border border-testo px-6 py-3 transition hover:bg-testo hover:text-sfondo">
+    Richiedi informazioni
+  </a>
+</div>
+    </div>
+  </div>
+</section>
+
+<section id="produzione" class="scroll-mt-8 border-t border-testo/20">
+  <div class="mx-auto grid max-w-6xl gap-8 px-6 py-16 md:grid-cols-3">
+    <div>
+      <span class="font-titoli text-2xl text-accento">05</span>
+      <h2 class="mt-2 font-titoli text-3xl">Produzione</h2>
+    </div>
+    <div class="md:col-span-2">
+      <p class="text-lg text-testo-soft">
+        Costruiamo insieme basi e beat originali, dall'idea al brano pronto da registrare.
+      </p>
+      <ul class="mt-6 list-disc space-y-2 pl-5 marker:text-accento">
+        <li>Beat rap e hip hop</li>
+        <li>Basi rock con chitarre, basso e batteria</li>
+        <li>Arrangiamento e struttura del brano</li>
+      </ul>
+      <div class="mt-8 flex flex-wrap items-center gap-x-6 gap-y-4">
+       
+       <div class="mt-8 flex flex-wrap items-center gap-x-6 gap-y-4">
+  <p>
+    <span class="font-titoli text-3xl text-accento">Su preventivo</span>
+  </p>
+  <a href="contatti.html" class="rounded border border-testo px-6 py-3 transition hover:bg-testo hover:text-sfondo">
+    Richiedi informazioni
+  </a>
+</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="pacchetto" class="scroll-mt-8 border-t border-testo/20">
+  <div class="mx-auto grid max-w-6xl gap-8 px-6 py-16 md:grid-cols-3">
+    <div>
+      <span class="font-titoli text-2xl text-accento">06</span>
+      <h2 class="mt-2 font-titoli text-3xl">Pacchetto completo</h2>
+    </div>
+    <div class="md:col-span-2">
+      <p class="text-lg text-testo-soft">
+        Registrazione, mixing e mastering in un unico percorso, dalla prima take al file finale.
+      </p>
+      <ul class="mt-6 list-disc space-y-2 pl-5 marker:text-accento">
+        <li>Registrazione voce, mixing e mastering insieme</li>
+        <li>Un unico referente dal primo giorno alla consegna</li>
+        <li>Prezzo concordato in base al progetto</li>
+      </ul>
+      <div class="mt-8 flex flex-wrap items-center gap-x-6 gap-y-4">
+        <p class="font-titoli text-2xl text-accento">Su preventivo</p>
+        <a href="contatti.html" class="rounded border border-testo px-6 py-3 transition hover:bg-testo hover:text-sfondo">
+          Richiedi un preventivo
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+    </main>
+
+ <footer class="border-t border-testo/20">
+   <div class="text-center">
+     <p class="font-titoli text-xl font-bold">Fonema Studios</p>
+     <p class="mt-2 text-testo-soft">Studio di registrazione.</p>
+   </div>
+      <div class="max-w-xl mx-auto grid gap-8 px-6 py-12 grid-cols-2 items-center justify-items-center ">
+
+        <div>
+          <h2 class="font-medium">Contatti</h2>
+          <ul class="mt-2 space-y-1 text-testo-soft">
+            <li>Via dei musicisti 1, Città</li>
+            <li>
+              <a href="tel:+390000000000" class="hover:underline"
+                >+39 000 000 0000</a
+              >
+            </li>
+            <li>
+              <a href="mailto:info@esempio.it" class="hover:underline"
+                >info@esempio.it</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <h2 class="font-medium">Menu</h2>
+          <ul class="mt-2 space-y-1 text-testo-soft">
+            <li><a href="index.html" class="hover:underline">Home</a></li>
+            <li><a href="servizi.html" class="hover:underline">Servizi</a></li>
+            <li>
+              <a href="galleria.html" class="hover:underline">Galleria</a>
+            </li>
+            <li>
+              <a href="contatti.html" class="hover:underline">Contatti</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <p
+        class="border-t border-testo/20 py-4 text-center text-sm text-testo-soft"
+      >
+        © 2026 Fonema Studios
+      </p>
+    </footer>
+  </body>
+</html>

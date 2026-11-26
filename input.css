@@ -1,0 +1,20 @@
+@import "tailwindcss";
+
+@theme {
+  --color-sfondo: #fce1aa;
+  --color-sfondo-form: #ffedc8;
+  --color-testo: #4A2E1B;
+  --color-testo-soft: #7a5a3a;
+  --color-accento: #A3472A;
+  --color-accento-hover: #7F351D;
+  --color-luce: #fbbf24;
+
+  --font-titoli: "Shrikhand", cursive;
+  --font-corpo: "DM Sans", sans-serif;
+
+  --animate-giro-lento: spin 14s linear infinite;
+}
+:focus-visible {
+  outline: 3px solid var(--color-accento);
+  outline-offset: 3px;
+}

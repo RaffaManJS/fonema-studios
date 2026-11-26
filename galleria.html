@@ -1,0 +1,407 @@
+<!doctype html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="index, follow">
+     <meta name="description" content="Sito web di prova,esempio di sito per uno
+    studio di registrazione/sala prove. Costruito con html,css in fraimword
+    Tailwind e qualche accenno di Javascript">
+    <meta
+      name="keywords"
+      content="HTML, CSS, JavaScript,studio,registrazione,recording,sala prove,mix,master,prove"
+    />
+    <meta name="author" content="Raffaele De Marco" />
+    <title>Galleria·Fonema Studios</title>
+    <link
+      rel="icon"
+      type="image/webp"
+      href="./assets/icons8-studio-di-registrazione-64.png" alt="immagine icona microfono"
+    />
+    
+    <link rel="preload" href="./assets/fonts/dm-sans-400.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="./assets/fonts/shrikhand-400.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="./fonts.css" />
+<link rel="stylesheet" href="./output.css" />
+  </head>
+
+  <body class="bg-sfondo text-testo font-corpo">
+ <header class="relative border-b border-testo/20">
+      <nav class="flex flex-col items-center justify-center lg:flex-row lg:justify-between gap-4 px-6 py-4">
+        <a href="index.html" class="text-xl font-['Shrikhand'] font-bold"
+          >Fonema Studios</a
+        >
+        <ul class="flex gap-6">
+          <li>
+            <a href="index.html" class="hover:underline underline-offset-4"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a href="servizi.html" class="hover:underline underline-offset-4"
+              >Servizi</a
+            >
+          </li>
+          <li>
+            <a href="galleria.html" aria-current="page" class="aria-[current=page]:underline aria-[current=page]:decoration-accento hover:underline underline-offset-4"
+              >Galleria</a
+            >
+          </li>
+          <li>
+            <a href="contatti.html" class="hover:underline underline-offset-4"
+              >Contatti</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+       <section class="mx-auto max-w-4xl px-6 py-20 text-center">
+  <p class="text-sm uppercase tracking-[0.3em] text-accento font-bold">Galleria</p>
+  <h1 class="mt-4 font-titoli text-4xl md:text-6xl">Spazi e Strumentazione</h1>
+  <p class="mt-6 text-lg text-testo-soft font-medium">
+  Dalla control room alle sale ripresa
+  </p>
+
+  <nav aria-label="Servizi" class="mt-10 flex flex-wrap justify-center gap-3">
+    <a href="#sala-registrazione" class="rounded-full border border-testo/30 px-4 py-2 text-sm transition hover:bg-testo hover:text-sfondo">Registrazione</a>
+    <a href="#regia-mixing" class="rounded-full border border-testo/30 px-4 py-2 text-sm transition hover:bg-testo hover:text-sfondo">Regia e Mixing</a>
+    <a href="#sala-prove" class="rounded-full border border-testo/30 px-4 py-2 text-sm transition hover:bg-testo hover:text-sfondo">Sala prove</a>
+    <a href="#produzione" class="rounded-full border border-testo/30 px-4 py-2 text-sm transition hover:bg-testo hover:text-sfondo">Produzione</a>
+    
+  </nav>
+</section>
+
+
+<!-- Contenitore principale per le 4 sezioni -->
+<div class="max-w-6xl mx-auto space-y-12">
+
+ <section id="sala-registrazione" class="scroll-mt-8 m-4">
+  <h2 class=" font-titoli text-3xl text-center">Sala di registrazione</h2>
+
+  <div class="mt-6 grid grid-cols-2 gap-4 md:grid-cols-3 md:grid-rows-2">
+
+    <!-- Foto 1 (grande) -->
+    <div class="col-span-2 aspect-video overflow-hidden rounded-lg bg-testo/10 md:row-span-2 md:aspect-auto">
+      <button type="button"
+              data-full="./assets/registrazione-1-1200.webp"
+              onclick="apriLightbox(this.dataset.full)"
+              aria-label="Ingrandisci: cabina vocale con microfono"
+              class="block h-full w-full">
+        <img src="./assets/registrazione-1-800.webp"
+             srcset="./assets/registrazione-1-1200.webp 1200w,
+                     ./assets/registrazione-1-800.webp 800w"
+             sizes="(min-width: 1152px) 730px, (min-width: 768px) 65vw, 100vw"
+             alt="Cabina vocale con microfono a condensatore e filtro anti-pop"
+             width="1200" height="675"
+             decoding="async" fetchpriority="high" draggable="false"
+             class="h-full w-full object-cover transition-transform duration-300 hover:scale-105 motion-reduce:transition-none motion-reduce:hover:scale-100">
+      </button>
+    </div>
+
+    <!-- Foto 2 (piccola) -->
+    <div class="aspect-square overflow-hidden rounded-lg bg-testo/10 md:aspect-video">
+      <button type="button"
+              data-full="./assets/registrazione-2-600.webp"
+              onclick="apriLightbox(this.dataset.full)"
+              aria-label="Ingrandisci: microfono in primo piano"
+              class="block h-full w-full">
+        <img src="./assets/registrazione-2-400.webp"
+             srcset="./assets/registrazione-2-600.webp 600w,
+                     ./assets/registrazione-2-400.webp 400w"
+             sizes="(min-width: 1152px) 357px, (min-width: 768px) 30vw, 50vw"
+             alt="Microfono a condensatore in primo piano"
+             width="600" height="338"
+             loading="lazy" decoding="async" draggable="false"
+             class="h-full w-full object-cover transition-transform duration-300 hover:scale-105 motion-reduce:transition-none motion-reduce:hover:scale-100">
+      </button>
+    </div>
+
+    <!-- Foto 3: identica alla 2, cambiando numero del file, alt e aria-label -->
+    <div class="aspect-square overflow-hidden rounded-lg bg-testo/10 md:aspect-video">
+      <button type="button"
+              data-full="./assets/registrazione-3-600.webp"
+              onclick="apriLightbox(this.dataset.full)"
+              aria-label="Ingrandisci: microfono in primo piano"
+              class="block h-full w-full">
+        <img src="./assets/registrazione-3-400.webp"
+             srcset="./assets/registrazione-3-600.webp 600w,
+                     ./assets/registrazione-3-400.webp 400w"
+             sizes="(min-width: 1152px) 357px, (min-width: 768px) 30vw, 50vw"
+             alt="Microfono a condensatore in primo piano"
+             width="600" height="338"
+             loading="lazy" decoding="async" draggable="false"
+             class="h-full w-full object-cover transition-transform duration-300 hover:scale-105 motion-reduce:transition-none motion-reduce:hover:scale-100">
+      </button>
+    </div>
+  </div>
+</section>
+ <section id="regia-mixing" class="scroll-mt-8 m-4">
+  <h2 class=" font-titoli text-3xl text-center">Regia & Mixing</h2>
+
+  <div class="mt-6 grid grid-cols-2 gap-4 md:grid-cols-3 md:grid-rows-2">
+
+    <!-- Foto 1 (grande) -->
+    <div class="col-span-2 aspect-video overflow-hidden rounded-lg bg-testo/10 md:row-span-2 md:aspect-auto">
+      <button type="button"
+              data-full="./assets/regia-1-1200.webp"
+              onclick="apriLightbox(this.dataset.full)"
+              aria-label="Ingrandisci: cabina vocale con microfono"
+              class="block h-full w-full">
+        <img src="./assets/regia-1-800.webp"
+             srcset="./assets/regia-1-1200.webp 1200w,
+                     ./assets/regia-1-800.webp 800w"
+             sizes="(min-width: 1152px) 730px, (min-width: 768px) 65vw, 100vw"
+             alt="Cabina vocale con microfono a condensatore e filtro anti-pop"
+             width="1200" height="675"
+             decoding="async" fetchpriority="high" draggable="false"
+             class="h-full w-full object-cover transition-transform duration-300 hover:scale-105 motion-reduce:transition-none motion-reduce:hover:scale-100">
+      </button>
+    </div>
+
+    <!-- Foto 2 (piccola) -->
+    <div class="aspect-square overflow-hidden rounded-lg bg-testo/10 md:aspect-video">
+      <button type="button"
+              data-full="./assets/regia-2-600.webp"
+              onclick="apriLightbox(this.dataset.full)"
+              aria-label="Ingrandisci: microfono in primo piano"
+              class="block h-full w-full">
+        <img src="./assets/"
+             srcset="./assets/regia-2-600.webp 600w,
+                     ./assets/regia-2-400.webp 400w"
+             sizes="(min-width: 1152px) 357px, (min-width: 768px) 30vw, 50vw"
+             alt="Microfono a condensatore in primo piano"
+             width="600" height="338"
+             loading="lazy" decoding="async" draggable="false"
+             class="h-full w-full object-cover transition-transform duration-300 hover:scale-105 motion-reduce:transition-none motion-reduce:hover:scale-100">
+      </button>
+    </div>
+
+    <!-- Foto 3: identica alla 2, cambiando numero del file, alt e aria-label -->
+    <div class="aspect-square overflow-hidden rounded-lg bg-testo/10 md:aspect-video">
+      <button type="button"
+              data-full="./assets/regia-3-600.webp"
+              onclick="apriLightbox(this.dataset.full)"
+              aria-label="Ingrandisci: microfono in primo piano"
+              class="block h-full w-full">
+        <img src="./assets/regia-3-400.webp"
+             srcset="./assets/regia-3-600.webp 600w,
+                     ./assets/regia-3-400.webp 400w"
+             sizes="(min-width: 1152px) 357px, (min-width: 768px) 30vw, 50vw"
+             alt="Microfono a condensatore in primo piano"
+             width="600" height="338"
+             loading="lazy" decoding="async" draggable="false"
+             class="h-full w-full object-cover transition-transform duration-300 hover:scale-105 motion-reduce:transition-none motion-reduce:hover:scale-100">
+      </button>
+    </div>
+  </div>
+</section>
+ <section id="sala-prove" class="scroll-mt-8 m-4">
+  <h2 class=" font-titoli text-3xl text-center">Sala prove</h2>
+
+  <div class="mt-6 grid grid-cols-2 gap-4 md:grid-cols-3 md:grid-rows-2">
+
+    <!-- Foto 1 (grande) -->
+    <div class="col-span-2 aspect-video overflow-hidden rounded-lg bg-testo/10 md:row-span-2 md:aspect-auto">
+      <button type="button"
+              data-full="./assets/sala-1-1200.webp"
+              onclick="apriLightbox(this.dataset.full)"
+              aria-label="Ingrandisci: cabina vocale con microfono"
+              class="block h-full w-full">
+        <img src="./assets/sala-1-800.webp"
+             srcset="./assets/sala-1-1200.webp 1200w,
+                     ./assets/sala-1-800.webp 800w"
+             sizes="(min-width: 1152px) 730px, (min-width: 768px) 65vw, 100vw"
+             alt="Cabina vocale con microfono a condensatore e filtro anti-pop"
+             width="1200" height="675"
+             decoding="async" fetchpriority="high" draggable="false"
+             class="h-full w-full object-cover transition-transform duration-300 hover:scale-105 motion-reduce:transition-none motion-reduce:hover:scale-100">
+      </button>
+    </div>
+
+    <!-- Foto 2 (piccola) -->
+    <div class="aspect-square overflow-hidden rounded-lg bg-testo/10 md:aspect-video">
+      <button type="button"
+              data-full="./assets/sala-2-600.webp"
+              onclick="apriLightbox(this.dataset.full)"
+              aria-label="Ingrandisci: microfono in primo piano"
+              class="block h-full w-full">
+        <img src="./assets/sala-2-400.webp"
+             srcset="./assets/sala-2-600.webp 600w,
+                     ./assets/sala-2-400.webp 400w"
+             sizes="(min-width: 1152px) 357px, (min-width: 768px) 30vw, 50vw"
+             alt="Microfono a condensatore in primo piano"
+             width="600" height="338"
+             loading="lazy" decoding="async" draggable="false"
+             class="h-full w-full object-cover transition-transform duration-300 hover:scale-105 motion-reduce:transition-none motion-reduce:hover:scale-100">
+      </button>
+    </div>
+
+    <!-- Foto 3: identica alla 2, cambiando numero del file, alt e aria-label -->
+    <div class="aspect-square overflow-hidden rounded-lg bg-testo/10 md:aspect-video">
+      <button type="button"
+              data-full="./assets/sala-3-600.webp"
+              onclick="apriLightbox(this.dataset.full)"
+              aria-label="Ingrandisci: microfono in primo piano"
+              class="block h-full w-full">
+        <img src="./assets/sala-3-400.webp"
+             srcset="./assets/sala-3-600.webp 600w,
+                     ./assets/sala-3-400.webp 400w"
+             sizes="(min-width: 1152px) 357px, (min-width: 768px) 30vw, 50vw"
+             alt="Microfono a condensatore in primo piano"
+             width="600" height="338"
+             loading="lazy" decoding="async" draggable="false"
+             class="h-full w-full object-cover transition-transform duration-300 hover:scale-105 motion-reduce:transition-none motion-reduce:hover:scale-100">
+      </button>
+    </div>
+  </div>
+</section>
+ <section id="produzione" class="scroll-mt-8 m-4">
+  <h2 class=" font-titoli text-3xl text-center">Produzione</h2>
+
+  <div class="mt-6 grid grid-cols-2 gap-4 md:grid-cols-3 md:grid-rows-2">
+
+    <!-- Foto 1 (grande) -->
+    <div class="col-span-2 aspect-video overflow-hidden rounded-lg bg-testo/10 md:row-span-2 md:aspect-auto">
+      <button type="button"
+              data-full="./assets/produzione-1-1200.webp"
+              onclick="apriLightbox(this.dataset.full)"
+              aria-label="Ingrandisci: cabina vocale con microfono"
+              class="block h-full w-full">
+        <img src="./assets/produzione-1-800.webp"
+             srcset="./assets/produzione-1-1200.webp 1200w,
+                     ./assets/produzione-1-800.webp 800w"
+             sizes="(min-width: 1152px) 730px, (min-width: 768px) 65vw, 100vw"
+             alt="Cabina vocale con microfono a condensatore e filtro anti-pop"
+             width="1200" height="675"
+             decoding="async" fetchpriority="high" draggable="false"
+             class="h-full w-full object-cover transition-transform duration-300 hover:scale-105 motion-reduce:transition-none motion-reduce:hover:scale-100">
+      </button>
+    </div>
+
+    <!-- Foto 2 (piccola) -->
+    <div class="aspect-square overflow-hidden rounded-lg bg-testo/10 md:aspect-video">
+      <button type="button"
+              data-full="./assets/produzione-2-600.webp"
+              onclick="apriLightbox(this.dataset.full)"
+              aria-label="Ingrandisci: microfono in primo piano"
+              class="block h-full w-full">
+        <img src="./assets/produzione-2-400.webp"
+             srcset="./assets/produzione-2-600.webp 600w,
+                     ./assets/produzione-2-400.webp 400w"
+             sizes="(min-width: 1152px) 357px, (min-width: 768px) 30vw, 50vw"
+             alt="Microfono a condensatore in primo piano"
+             width="600" height="338"
+             loading="lazy" decoding="async" draggable="false"
+             class="h-full w-full object-cover transition-transform duration-300 hover:scale-105 motion-reduce:transition-none motion-reduce:hover:scale-100">
+      </button>
+    </div>
+
+    <!-- Foto 3: identica alla 2, cambiando numero del file, alt e aria-label -->
+    <div class="aspect-square overflow-hidden rounded-lg bg-testo/10 md:aspect-video">
+      <button type="button"
+              data-full="./assets/produzione-3-600.webp"
+              onclick="apriLightbox(this.dataset.full)"
+              aria-label="Ingrandisci: microfono in primo piano"
+              class="block h-full w-full">
+        <img src="./assets/produzione-3-400.webp"
+             srcset="./assets/produzione-3-600.webp 600w,
+                     ./assets/produzione-3-400.webp 400w"
+             sizes="(min-width: 1152px) 357px, (min-width: 768px) 30vw, 50vw"
+             alt="Microfono a condensatore in primo piano"
+             width="600" height="338"
+             loading="lazy" decoding="async" draggable="false"
+             class="h-full w-full object-cover transition-transform duration-300 hover:scale-105 motion-reduce:transition-none motion-reduce:hover:scale-100">
+      </button>
+    </div>
+  </div>
+</section>
+
+ 
+
+</div>
+
+    </main>
+
+    <footer class="border-t border-testo/20">
+   <div class="text-center">
+     <p class="font-titoli text-xl font-bold">Fonema Studios</p>
+     <p class="mt-2 text-testo-soft">Studio di registrazione.</p>
+   </div>
+      <div class="max-w-xl mx-auto grid gap-8 px-6 py-12 grid-cols-2 items-center justify-items-center ">
+
+        <div>
+          <h2 class="font-medium">Contatti</h2>
+          <ul class="mt-2 space-y-1 text-testo-soft">
+            <li>Via dei musicisti 1, Città</li>
+            <li>
+              <a href="tel:+390000000000" class="hover:underline"
+                >+39 000 000 0000</a
+              >
+            </li>
+            <li>
+              <a href="mailto:info@esempio.it" class="hover:underline"
+                >info@esempio.it</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <h2 class="font-medium">Menu</h2>
+          <ul class="mt-2 space-y-1 text-testo-soft">
+            <li><a href="index.html" class="hover:underline">Home</a></li>
+            <li><a href="servizi.html" class="hover:underline">Servizi</a></li>
+            <li>
+              <a href="galleria.html" class="hover:underline">Galleria</a>
+            </li>
+            <li>
+              <a href="contatti.html" class="hover:underline">Contatti</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <p
+        class="border-t border-testo/20 py-4 text-center text-sm text-testo-soft"
+      >
+        © 2026 Fonema Studios
+      </p>
+    </footer>
+    <!-- Finestra Lightbox (Nascosta di default) -->
+<div id="lightbox" class="fixed inset-0 z-50 hidden bg-black/90 backdrop-blur-sm flex items-center justify-center p-4 transition-opacity" onclick="chiudiLightbox()">
+  
+  <!-- Bottone Chiudi in alto a destra -->
+  <button class="absolute top-6 right-6 text-white text-4xl font-light hover:text-gray-300 focus:outline-none">&times;</button>
+  
+  <!-- Immagine Ingrandita (onclick="event.stopPropagation()" evita che cliccando sulla foto si chiuda) -->
+  <img id="lightbox-img" src="" alt="Anteprima" class="max-h-[90vh] max-w-[90vw] rounded-lg shadow-2xl object-contain" onclick="event.stopPropagation()">
+
+</div>
+
+<!-- Script per gestire apertura e chiusura -->
+<script>
+  const lightbox = document.getElementById('lightbox');
+  const lightboxImg = document.getElementById('lightbox-img');
+
+  function apriLightbox(src) {
+    lightboxImg.src = src;
+    lightbox.classList.remove('hidden');
+    document.body.style.overflow = 'hidden'; // Blocca lo scroll della pagina sotto
+  }
+
+  function chiudiLightbox() {
+    lightbox.classList.add('hidden');
+    lightboxImg.src = '';
+    document.body.style.overflow = ''; // Riattiva lo scroll
+  }
+
+  // Chiude la foto anche premendo il tasto ESC sulla tastiera
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') chiudiLightbox();
+  });
+</script>
+
+  </body>>
+    

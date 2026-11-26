@@ -1,0 +1,334 @@
+<!doctype html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="index, follow" />
+    <meta name="description" content="Sito web di prova,esempio di sito per uno
+    studio di registrazione/sala prove. Costruito con html,css in fraimword
+    Tailwind e qualche accenno di Javascript">
+    <meta
+      name="keywords"
+      content="HTML, CSS, JavaScript,studio,registrazione,recording,sala prove,mix,master,prove"
+    />
+    <meta name="author" content="Raffaele De Marco" />
+    <title>Fonema Studios</title>
+    <link
+      rel="icon"
+      type="image/webp"
+      href="./assets/icons8-studio-di-registrazione-64.png"
+      alt="immagine icona microfono"
+    />
+    <link
+      rel="preload"
+      href="./assets/fonts/dm-sans-400.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="./assets/fonts/shrikhand-400.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link rel="stylesheet" href="./fonts.css" />
+<link rel="stylesheet" href="./output.css" />
+  </head>
+  <body class="bg-sfondo text-testo font-corpo">
+    <!-- Immagine svg del vinile -->
+
+    <svg width="0" height="0" class="absolute" aria-hidden="true">
+      <symbol id="vinile" viewBox="0 0 100 100">
+        <circle cx="50" cy="50" r="48" class="fill-testo" />
+        <circle
+          cx="50"
+          cy="50"
+          r="40"
+          fill="none"
+          class="stroke-sfondo/20"
+          stroke-width="1"
+        />
+        <circle
+          cx="50"
+          cy="50"
+          r="33"
+          fill="none"
+          class="stroke-sfondo/20"
+          stroke-width="1"
+        />
+        <circle
+          cx="50"
+          cy="50"
+          r="26"
+          fill="none"
+          class="stroke-sfondo/20"
+          stroke-width="1"
+        />
+        <path
+          d="M22 30 A34 34 0 0 1 42 16"
+          fill="none"
+          class="stroke-sfondo/40"
+          stroke-width="2"
+          stroke-linecap="round"
+        />
+        <circle cx="50" cy="50" r="16" class="fill-accento" />
+        <circle cx="50" cy="38" r="2" class="fill-sfondo/60" />
+        <circle cx="50" cy="50" r="2.5" class="fill-sfondo" />
+      </symbol>
+    </svg>
+
+    <header class="relative border-b border-testo/20">
+      <nav
+        class="flex flex-col items-center justify-center lg:flex-row lg:justify-between gap-4 px-6 py-4"
+      >
+        <a href="index.html" class="text-xl font-['Shrikhand'] font-bold"
+          >Fonema Studios</a
+        >
+        <ul class="flex gap-6">
+          <li>
+            <a
+              href="index.html"
+              aria-current="page"
+              class="hover:underline underline-offset-4 aria-[current=page]:underline aria-[current=page]:decoration-accento"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a
+              href="./servizi.html"
+              aria-current="page"
+              class="hover:underline underline-offset-4"
+              >Servizi</a
+            >
+          </li>
+          <li>
+            <a href="galleria.html" class="hover:underline underline-offset-4"
+              >Galleria</a
+            >
+          </li>
+          <li>
+            <a href="contatti.html" class="hover:underline underline-offset-4"
+              >Contatti</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section
+        class="relative overflow-hidden max-w-4xl mx-auto text-center px-6 py-24"
+      >
+        <svg
+          class="mx-auto mb-6 block h-24 w-24 animate-giro-lento aria-hidden='true'"
+        >
+          <use href="#vinile" />
+        </svg>
+        <svg
+          class="absolute left-1/2 top-1/2 h-72 w-72 sm:h-128 sm:w-lg -translate-x-1/2 -translate-y-1/2 opacity-[0.06] pointer-events-none"
+          aria-hidden="true"
+          aria-hidden="true"
+        >
+          <use href="#vinile" />
+        </svg>
+        <p class="text-sm uppercase tracking-[0.3em] text-accento">
+          Studio di registrazione
+        </p>
+
+        <h1
+          class="mt-4 font-['Shrikhand'] font-bold uppercase tracking-wider text-5xl md:text-8xl"
+        >
+          Fonema Studios
+        </h1>
+
+        <div class="mx-auto mt-8 h-px w-24 bg-accento"></div>
+
+        <p class="mt-8 text-lg text-testo-soft">
+          Registrazione, sala prove, mixing e mastering: tutto sotto lo stesso
+          tetto.
+        </p>
+
+        <div class="mt-10 flex flex-wrap justify-center gap-4">
+          <a
+            href="contatti.html"
+            class="mt-8 inline-block rounded bg-accento px-6 py-3 text-sfondo transition hover:bg-accento-hover"
+          >
+            Prenota una sessione
+          </a>
+        </div>
+      </section>
+      <section class="max-w-6xl mx-auto px-6 pb-24">
+        <h2 class="font-titoli text-3xl text-center">I nostri servizi</h2>
+
+        <div class="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+          <article
+            class="rounded-lg bg-testo/5 p-6 border border-t-white/40 border-x-testo/20 border-b-black/40 shadow-[inset_0_2px_4px_rgba(255,255,255,0.2),inset_0_-4px_6px_rgba(0,0,0,0.25),0_10px_20px_-5px_rgba(0,0,0,0.3)]"
+          >
+            <span class="font-titoli text-2xl text-accento">01</span>
+            <h3 class="mt-2 text-xl font-medium">Registrazione</h3>
+            <p class="mt-2 text-testo-soft">
+              Sala di ripresa trattata acusticamente e microfoni di qualità per
+              catturare il tuo suono.
+            </p>
+          </article>
+
+          <article
+            class="rounded-lg bg-testo/5 p-6 border border-t-white/40 border-x-testo/20 border-b-black/40 shadow-[inset_0_2px_4px_rgba(255,255,255,0.2),inset_0_-4px_6px_rgba(0,0,0,0.25),0_10px_20px_-5px_rgba(0,0,0,0.3)]"
+          >
+            <span class="font-titoli text-2xl text-accento">02</span>
+            <h3 class="mt-2 text-xl font-medium">Sala prove</h3>
+            <p class="mt-2 text-testo-soft">
+              Uno spazio attrezzato dove provare con la tua band, a ore o a
+              pacchetto.
+            </p>
+          </article>
+
+          <article
+            class="rounded-lg bg-testo/5 p-6 border border-t-white/40 border-x-testo/20 border-b-black/40 shadow-[inset_0_2px_4px_rgba(255,255,255,0.2),inset_0_-4px_6px_rgba(0,0,0,0.25),0_10px_20px_-5px_rgba(0,0,0,0.3)]"
+          >
+            <span class="font-titoli text-2xl text-accento">03</span>
+            <h3 class="mt-2 text-xl font-medium">Mixing</h3>
+            <p class="mt-2 text-testo-soft">
+              Bilanciamo le tracce una per una finché ogni strumento trova il
+              suo posto.
+            </p>
+          </article>
+
+          <article
+            class="rounded-lg bg-testo/5 p-6 border border-t-white/40 border-x-testo/20 border-b-black/40 shadow-[inset_0_2px_4px_rgba(255,255,255,0.2),inset_0_-4px_6px_rgba(0,0,0,0.25),0_10px_20px_-5px_rgba(0,0,0,0.3)]"
+          >
+            <span class="font-titoli text-2xl text-accento">04</span>
+            <h3 class="mt-2 text-xl font-medium">Mastering</h3>
+            <p class="mt-2 text-testo-soft">
+              L'ultima rifinitura, perché il brano suoni bene su ogni impianto e
+              su ogni piattaforma.
+            </p>
+          </article>
+        </div>
+
+        <div class="mt-12 text-center">
+          <a
+            href="servizi.html"
+            class="mt-8 inline-block rounded bg-accento px-6 py-3 text-sfondo transition hover:bg-accento-hover"
+          >
+            Scopri i servizi
+          </a>
+        </div>
+      </section>
+
+      <section class="mx-auto max-w-6xl px-6 pb-24">
+        <h2 class="font-titoli text-3xl text-center">
+          Ascolta i nostri lavori
+        </h2>
+        <p class="mx-auto mt-4 max-w-xl text-center text-testo-soft">
+          Alcuni brani registrati e rifiniti in studio.
+        </p>
+
+        <div class="mt-12 grid gap-6 lg:grid-cols-3">
+          <article class="rounded-lg border border-testo/20 bg-testo/5 p-6">
+            <h3 class="mt-2 text-xl font-medium">Fede</h3>
+            <p class="mt-1 text-sm text-testo-soft">RaffxPass</p>
+            <audio
+              controls
+              preload="none"
+              src="./assets/audio/FEDE-RAFFXPASS.mp3"
+              aria-label="Ascolta: raffxpass - fede"
+              class="mt-4 w-full [color-scheme:light] [&::-webkit-media-controls-panel]:bg-testo/10"
+            ></audio>
+          </article>
+
+          <article class="rounded-lg border border-testo/20 bg-testo/5 p-6">
+            <h3 class="mt-2 text-xl font-medium">Frammenti</h3>
+            <p class="mt-1 text-sm text-testo-soft">RaffxPass</p>
+            <audio
+              controls
+              preload="none"
+              src="./assets/audio/FRAMMENTI-RAFFXPASS.mp3"
+              aria-label="Ascolta: Titolo del brano 2"
+              class="mt-4 w-full [color-scheme:light] [&::-webkit-media-controls-panel]:bg-testo/10"
+            ></audio>
+          </article>
+
+          <article class="rounded-lg border border-testo/20 bg-testo/5 p-6">
+            <h3 class="mt-2 text-xl font-medium">In mezzo al branco</h3>
+            <p class="mt-1 text-sm text-testo-soft">RaffxPass</p>
+            <audio
+              controls
+              preload="none"
+              src="./assets/audio/RAFFXPASS-INMEZZOALBRANCO.mp3"
+              aria-label="Ascolta: Titolo del brano 3"
+              class="mt-4 w-full [color-scheme:light] [&::-webkit-media-controls-panel]:bg-testo/10"
+            ></audio>
+          </article>
+        </div>
+      </section>
+
+      <section class="border-y border-testo/20 bg-testo/5">
+        <div class="mx-auto max-w-3xl px-6 py-16 text-center">
+          <h2 class="font-titoli text-3xl">
+            Hai un brano da registrare o da rifinire?
+          </h2>
+          <p class="mt-4 text-testo-soft">
+            Raccontaci il tuo progetto: ti rispondiamo con una proposta su
+            misura.
+          </p>
+          <a
+            href="contatti.html"
+            class="mt-8 inline-block rounded bg-accento px-6 py-3 text-sfondo transition hover:bg-accento-hover"
+          >
+            Prenota una sessione
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="border-t border-testo/20">
+      <div class="text-center">
+        <p class="font-titoli text-xl font-bold">Fonema Studios</p>
+        <p class="mt-2 text-testo-soft">Studio di registrazione.</p>
+      </div>
+      <div
+        class="max-w-xl mx-auto grid gap-8 px-6 py-12 grid-cols-2 items-center justify-items-center"
+      >
+        <div>
+          <h2 class="font-medium">Contatti</h2>
+          <ul class="mt-2 space-y-1 text-testo-soft">
+            <li>Via dei musicisti 1, Città</li>
+            <li>
+              <a href="tel:+390000000000" class="hover:underline"
+                >+39 000 000 0000</a
+              >
+            </li>
+            <li>
+              <a href="mailto:info@esempio.it" class="hover:underline"
+                >info@esempio.it</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <h2 class="font-medium">Menu</h2>
+          <ul class="mt-2 space-y-1 text-testo-soft">
+            <li><a href="index.html" class="hover:underline">Home</a></li>
+            <li><a href="servizi.html" class="hover:underline">Servizi</a></li>
+            <li>
+              <a href="galleria.html" class="hover:underline">Galleria</a>
+            </li>
+            <li>
+              <a href="contatti.html" class="hover:underline">Contatti</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <p
+        class="border-t border-testo/20 py-4 text-center text-sm text-testo-soft"
+      >
+        © 2026 Fonema Studios
+      </p>
+    </footer>
+  </body>
+</html>
