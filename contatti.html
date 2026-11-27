@@ -150,13 +150,14 @@
             name="nome" 
             placeholder=" " 
             required
+            autocomplete="given-name"
             class="peer w-full rounded-2xl border border-[#C8B6A6] bg-sfondo px-4 pt-6 pb-2.5 text-sm text-[#3E2723] placeholder-transparent shadow-sm transition-all focus:border-[#6D4C41] focus:outline-none focus:ring-2 focus:ring-[#6D4C41]/20"
           />
           <label 
             for="nome" 
             class="pointer-events-none absolute left-4 top-2 text-xs font-medium text-testo transition-all 
                    peer-placeholder-shown:top-4 peer-placeholder-shown:text-sm peer-placeholder-shown:font-normal peer-placeholder-shown:text-text 
-                   peer-focus:top-2 peer-focus:text-xs peer-focus:font-medium peer-focus:text-[#5D4037]"
+                   peer-focus:top-2 peer-focus:text-xs peer-focus:font-medium peer-focus:text-[#5D4037] peer-autofill:top-2! peer-autofill:text-xs!"
           >
             Nome
           </label>
@@ -168,6 +169,7 @@
             type="text" 
             id="cognome" 
             name="cognome" 
+            autocomplete="family-name"
             placeholder=" " 
             required
             class="peer w-full rounded-2xl border border-[#C8B6A6]  bg-sfondo px-4 pt-6 pb-2.5 text-sm text-[#3E2723] placeholder-transparent shadow-sm transition-all focus:border-[#6D4C41] focus:outline-none focus:ring-2 focus:ring-[#6D4C41]/20"
@@ -191,6 +193,7 @@
           name="email" 
           placeholder=" " 
           required
+         autocomplete="email"
           class="peer w-full rounded-2xl border border-[#C8B6A6]  bg-sfondo px-4 pt-6 pb-2.5 text-sm text-[#3E2723] placeholder-transparent shadow-sm transition-all focus:border-[#6D4C41] focus:outline-none focus:ring-2 focus:ring-[#6D4C41]/20"
         />
         <label 
